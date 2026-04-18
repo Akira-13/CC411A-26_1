@@ -15,13 +15,13 @@ Para usar esta herramienta junto a la máquina de exploración Metasploitable, s
 
 Con esto, tenemos un laboratorio funcional y protegido con el firewall pfSense.
 
-![3](/img/3.png)
+![3](img/3.png)
 
 ## Actualización
 
 Siguiendo el tutorial, se actualiza la máquina Kali.
 
-![4](/img/4.png)
+![4](img/4.png)
 
 # Herramientas de recolección de información
 
@@ -33,25 +33,25 @@ Nmap es una herramienta para recolección de información de redes usada extensi
 
 Se usa el comando `nmap -O 192.168.1.101`. La dirección es la dirección de la máquina Metasploitable.
 
-![5](/img/5.png)
+![5](img/5.png)
 
 ### Escaneo de puertos TCP
 
 Se usa el comando `nmap -p 1-65535 -T4 192.168.1.101 `.
 
-![6](/img/6.png)
+![6](img/6.png)
 
 ### Escano sigiloso (Stealth Scan)
 
 Se realiza iniciando un 3-way handshake pero no terminándolo para que no quede registrado. Se usa el comando `nmap -sS -T4 192.168.1.101 `
 
-![7](/img/7.png)
+![7](img/7.png)
 
 ## Searchsploit
 
 Searchsploit es una herramienta para buscar vulnerabilidades conocidas de `https://www.exploit-db.com/`. Solo se usa el comando con el término de búsqueda.
 
-![8](/img/8.png)
+![8](img/8.png)
 
 ## Herramientas DNS
 
@@ -61,25 +61,25 @@ Es común investigar registros DNS durante la etapa de reconocimiento en una rev
 
 Este script permite recolectar información MX, A y otros tipos de registros de un dominio.
 
-![9](/img/9.png)
+![9](img/9.png)
 
 ### dnsmap
 
 Permite recolectar información adyacente a los registros, como números de contacto, correos electrónicos, etc.
 
-![10](/img/10.png)
+![10](img/10.png)
 
 ### dnstracer
 
 Determina donde un DNS obtiene su información dado un host.
 
-![11](/img/11.png)
+![11](img/11.png)
 
 ### lbd
 
 Determina si un dominio utiliza un balanceador de carga.
 
-![12](/img/12.png)
+![12](img/12.png)
 
 En este caso, `google.com` usa un balanceador de carga DNS.
 
@@ -87,7 +87,7 @@ En este caso, `google.com` usa un balanceador de carga DNS.
 
 Es una herramienta similar a `ping` pero con capacidades para bypassear firewalls y usar distintos protocolos.
 
-![13](/img/13.png)
+![13](img/13.png)
 
 # Análisis de vulnerabilidades
 
@@ -99,16 +99,16 @@ Kali tiene herramientas para explotar vulnerabilidades.
 
 Esta herramienta permite reconocer, analizar y explotar dispositivos Cisco. Utilizándola en Metsaploitable, solo reconoce el servicio TFTP.
 
-![14](/img/14.png)
+![14](img/14.png)
 
 ### Cisco Analysis Tool
 
 Permite reconocer y analizar vulnerabilidades en dispositivos Cisco.
 
-![15](/img/15.png)
+![15](img/15.png)
 
 ### BED
 
 Permite reconocer vulnerabilidades comunes como buffer overflows, format strings, etc. Se puede usar con una dirección objetivo.
 
-![16](/img/16.png)
+![16](img/16.png)
